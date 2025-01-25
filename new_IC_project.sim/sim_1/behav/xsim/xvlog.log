@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_operator
+INFO: [VRFC 10-311] analyzing module clock_gating
+INFO: [VRFC 10-311] analyzing module d_flipflop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_operator_tb

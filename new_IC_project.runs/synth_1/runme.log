@@ -1,0 +1,213 @@
+
+*** Running vivado
+    with args -log pixel_operator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pixel_operator.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Jan 15 23:07:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source pixel_operator.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 545.453 ; gain = 203.605
+Command: read_checkpoint -auto_incremental -incremental C:/Users/NEDUET/Desktop/new_IC_project/new_IC_project.srcs/utils_1/imports/synth_1/pixel_operator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/NEDUET/Desktop/new_IC_project/new_IC_project.srcs/utils_1/imports/synth_1/pixel_operator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top pixel_operator -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13560
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.957 ; gain = 450.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pixel_operator' [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clock_gating' [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'clock_gating' (0#1) [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:59]
+INFO: [Synth 8-6157] synthesizing module 'd_flipflop' [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'd_flipflop' (0#1) [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_operator' (0#1) [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:2]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1114.977 ; gain = 559.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1114.977 ; gain = 559.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1114.977 ; gain = 559.609
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'latch_out_reg' [C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator.v:68]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1114.977 ; gain = 559.609
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |    18|
+|5     |LUT3   |     1|
+|6     |LUT4   |    24|
+|7     |LUT5   |     9|
+|8     |LUT6   |    12|
+|9     |FDCE   |    16|
+|10    |LD     |     1|
+|11    |IBUF   |    28|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+-------------+------+
+|      |Instance          |Module       |Cells |
++------+------------------+-------------+------+
+|1     |top               |             |   127|
+|2     |  clk_gate        |clock_gating |    12|
+|3     |  intermediate_ff |d_flipflop   |    70|
++------+------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1321.348 ; gain = 765.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1326.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1426.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE (inverted pins: G): 1 instance 
+
+Synth Design complete | Checksum: 19411dc
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:40 . Memory (MB): peak = 1426.219 ; gain = 876.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1426.219 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NEDUET/Desktop/new_IC_project/new_IC_project.runs/synth_1/pixel_operator.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file pixel_operator_utilization_synth.rpt -pb pixel_operator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 23:08:35 2025...

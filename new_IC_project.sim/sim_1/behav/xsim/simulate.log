@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Verification Error at time               300000
+Input: 80, Expected: bc, Got: 00
+Verification Error at time               400000
+Input: 80, Expected: 44, Got: bc
+Verification Error at time               500000
+Input: b0, Expected: ff, Got: 44
+Verification Error at time               600000
+Input: aa, Expected: 55, Got: ff
+WARNING: File image_data.txt referenced from process on C:/Users/NEDUET/Desktop/image enhancement/image enhancement/pixel_operator_tb.v at line 102 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../image enhancement/image enhancement/pixel_operator.v" \
+"../../../../../image enhancement/image enhancement/pixel_operator_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
