@@ -85,6 +85,9 @@ The Verilog design incorporates techniques like clock gating to minimize power c
    - Compare the output image with the expected results to validate the functionality.
 
 ---
+Timing Diagram
+
+![new6](https://github.com/user-attachments/assets/ea25b854-39bf-4a2b-9a65-43ea04b29138)
 
 ---
 
