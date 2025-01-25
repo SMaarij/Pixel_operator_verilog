@@ -86,14 +86,6 @@ The Verilog design incorporates techniques like clock gating to minimize power c
 
 ---
 
-## Examples
-### Input and Output Example
-1. Input Image:
-   ![Input Image](Images/input_image.png)
-
-2. Processed Output Image:
-   ![Output Image](Images/output_image.png)
-
 ---
 
 ## Results
